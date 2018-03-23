@@ -130,10 +130,19 @@ footer {
 
 .recipeTable {
     width:100%;
+    border-collapse: collapse;
 }
 
-.recipeTable td {
+/*.recipeTable td {
     border: solid black 1px;
+}*/
+
+.recipeTable tr:hover {
+    background:#505050;
+}
+
+#headerRow:hover {
+    background:#303030;
 }
 
 .mainButton {

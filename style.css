@@ -1,0 +1,258 @@
+html {
+    background:#303030;
+    color:floralwhite;
+    font-family: sans-serif;
+}
+
+body {
+    max-width: 675px;
+    margin:auto;
+}
+
+header {
+    width:268px;
+    margin:auto;
+}
+
+a {
+    color:#303030;
+    text-decoration: none;
+}
+
+a:visited {
+    color:#303030;
+}
+
+.logo {
+    max-width:50px;
+    max-height:50px;
+    float:left;
+    padding:1em;
+}
+
+.pageTitle {
+    float:left;
+    font-size: 2em;
+    margin-top:.75em;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+h2 {
+    text-align: center;
+    clear:both;
+    margin:0;
+}
+
+h3 {
+    text-align: center;
+    margin:0;
+
+}
+
+.error {
+    color:red;
+}
+
+h4 {
+    text-align: center;
+    margin:0;
+}
+
+.categoryButton {
+    background:floralwhite;
+    width:8em;
+    padding:.5em;
+    color:#303030;
+    font-weight:bold;
+    display:block;
+    margin:auto;
+    margin-top:.5em;
+    border:none;
+}
+
+.categoryButton:hover {
+    background:gray;
+    color:floralwhite;
+}
+
+.recipeButton {
+    background:none;
+    border:none;
+    color:floralwhite;
+    display:block;
+    margin:auto;
+    margin-top:.5em;
+}
+
+.recipeButton:hover {
+    background:floralwhite;
+    color:#303030;
+}
+
+.image {
+    max-width: calc(100% - 1em);
+    padding:.5em;
+}
+
+.ingredients {
+    
+}
+
+.instructions {
+    padding:1em;
+}
+
+footer {
+    text-align: center;
+}
+
+.hidden {
+    display:none;
+}
+
+.notVisible {
+    visibility:hidden;
+}
+
+.uploadIcon {
+    max-height: 2em;
+    max-width: 2em;
+}
+
+#SubmitBtn {
+    font-size:1.5em;
+}
+
+.categoryTable {
+    width:13em;
+    margin:auto;
+}
+
+.recipeTable {
+    width:100%;
+}
+
+.mainButton {
+    background:floralwhite;
+    color:#303030;
+    border:none;
+    font-weight: bold;
+    padding:.5em;
+    display:block;
+    margin:auto;
+    margin-top:1em;
+    margin-bottom:1em;
+}
+
+.mainButton:hover {
+    background:gray;
+    color:floralwhite;
+}
+
+
+
+.editButton {
+    background:floralwhite;
+    color:#303030;
+    border:none;
+    font-weight: bold;
+    padding:.5em;
+    font-size: .85em;
+}
+
+.editButton:hover {
+    background:gray;
+    color:floralwhite;
+}
+
+.middle {
+    vertical-align: middle;
+}
+
+.uploadButton {
+    background:floralwhite;
+    color:#303030;
+    border:none;
+    font-weight: bold;
+    padding:.5em;
+    margin-right:.25em;
+    
+}
+
+.uploadButton:hover {
+    background:gray;
+    color:floralwhite;
+}
+
+.imageCell {
+    width:6.5em;
+}
+
+.formFloat {
+    float:right;
+}
+
+.delete {
+    color:red;
+}
+
+.hideContributor {
+    display:none;
+}
+
+.hideDates {
+    display:none;
+}
+
+
+@media only screen and (min-width: 390px) {
+    
+    header {
+        width:390px;
+    }
+    
+    .logo {
+        max-width: 75px;
+        max-height: 75px;
+    }
+    
+    .pageTitle {
+        font-size: 3em;
+        margin-top:.6em
+    }
+    
+    .recipeTable {
+        width:calc(100% - 4em);
+        margin-left:2em;
+        margin-right:2em;
+    }
+}
+
+@media only screen and (min-width: 475px) {
+    
+    header {
+        width:475px;
+    }
+    
+    .logo {
+        max-width: 100px;
+        max-height: 100px;
+    }
+    
+    .pageTitle {
+        font-size: 3.75em;
+        margin-top:.5em;
+    }
+    
+    .hideContributor {
+        display:inline;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    
+
+    .hideDates {
+        display:inline;
+    }
+}

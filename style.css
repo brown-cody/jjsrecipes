@@ -58,9 +58,11 @@ h4 {
     margin:0;
 }
 
+
+
 .categoryButton {
     background:floralwhite;
-    width:8em;
+    width:10em;
     padding:.5em;
     color:#303030;
     font-weight:bold;
@@ -224,6 +226,35 @@ footer {
 
 .sortHeading:visited {
     color:floralwhite;
+}
+
+.searchButton {
+    background:#303030;
+    border:none;
+}
+
+.icon {
+    margin-left:-.4em;
+    width:1.5em;
+    position:relative;
+    top:.4em;
+
+}
+
+.searchForm {
+    width:10em;
+    margin:auto;
+}
+
+.searchField {
+    width:7.3em;
+    height:2em;
+    border:none;
+    background:floralwhite;
+    margin-right: none;
+    padding-left:.5em;
+    color:#606060;
+    font-weight:bold;
 }
 
 @media only screen and (min-width: 390px) {

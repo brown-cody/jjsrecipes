@@ -92,6 +92,18 @@ function get_recipes_by_category($recipeCategory) {
     return $recipes;
 }
 
+function get_recipes_by_contributor($recipeContributor) {
+    global $db;
+    $query = 'SELECT * FROM recipe
+              WHERE recipeContributor = :recipeContributor';
+    $statement = $db->prepare($query);
+    $statement->bindValue(":recipeContributor", $recipeContributor);
+    $statement->execute();
+    $recipes = $statement->fetchAll();
+    $statement->closeCursor();
+    return $recipes;
+}
+
 function set_recipe_image($recipeID, $recipeImage) {
     global $db;
     $query = 'UPDATE recipe

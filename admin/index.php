@@ -185,5 +185,6 @@ switch ($action) {
         
         include('view\adminview.php');
         break;
-    }
+
+}
 ?>

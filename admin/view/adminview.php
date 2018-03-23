@@ -36,12 +36,12 @@
     <table class="recipeTable">
         <tr>
             <th></th>
-            <th>Name</th>
-            <th>Category</th>
-            <th class="hideContributor">Contributor</th>
-            <th>Image</th>
-            <th class="hideDates">Updated</th>
-            <th class="hideDates">Added</th>
+            <th><a href="index.php?subaction=recipesort" class="sortHeading">Name</a></th>
+            <th><a href="index.php?subaction=categorysort" class="sortHeading">Category</a></th>
+            <th class="hideContributor"><a href="index.php?subaction=contributorsort" class="sortHeading">Contributor</a></th>
+            <th><a href="index.php?subaction=imagesort" class="sortHeading">Image</a></th>
+            <th class="hideDates"><a href="index.php?subaction=updatedsort" class="sortHeading">Updated</a></th>
+            <th class="hideDates"><a href="index.php?subaction=createdsort" class="sortHeading">Added</a></th>
         </tr>
         <?php foreach($recipes as $recipe): ?>
             <tr>

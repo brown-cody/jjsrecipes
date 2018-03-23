@@ -16,7 +16,29 @@ if ($action == NULL) {
 
 switch ($action) {
     case 'adminview':
+        $subaction = filter_input(INPUT_GET, 'subaction', FILTER_SANITIZE_STRING);
         $recipes = get_recipes();
+        switch ($subaction) {
+            case 'recipesort':
+                break;
+            case 'categorysort':
+                $recipes = sort_recipes_by_category();
+                break;
+            case 'contributorsort':
+                $recipes = sort_recipes_by_contributor();
+                break;
+            case 'imagesort':
+                $recipes = sort_recipes_by_image();
+                break;
+            case 'updatedsort':
+                $recipes = sort_recipes_by_updated();
+                break;
+            case 'createdsort':
+                $recipes = sort_recipes_by_created();
+                break;
+            default:
+                break;
+        }
         $categories = get_categories();
         include('view\adminview.php');
         break;
@@ -102,7 +124,7 @@ switch ($action) {
         $recipeID = filter_input(INPUT_POST, 'recipeID', FILTER_VALIDATE_INT, FILTER_SANITIZE_NUMBER_INT);
         
         unlink('../images/'.$recipeID.'.jpg');
-        
+        set_recipe_image($recipeID, '0');
         $recipes = get_recipes();
         $categories = get_categories();
         include('view\adminview.php');
@@ -145,7 +167,8 @@ switch ($action) {
 
                 //function for upload file
                     if(move_uploaded_file($fileTmpName,$uploadPath)){
-                        $success = "Successful image upload for ".$recipeName; 
+                        $success = "Successful image upload for ".$recipeName;
+                        set_recipe_image($recipeID, '1');
                     }
                 } else {
                     $error = "Maximum upload file size limit is 5,000 kb";

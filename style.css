@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    max-width: 675px;
+    max-width: 1024px;
     margin:auto;
 }
 
@@ -132,6 +132,10 @@ footer {
     width:100%;
 }
 
+.recipeTable td {
+    border: solid black 1px;
+}
+
 .mainButton {
     background:floralwhite;
     color:#303030;
@@ -202,6 +206,7 @@ footer {
 
 .hideDates {
     display:none;
+    width:5.5em;
 }
 
 .sortHeading {
@@ -252,7 +257,7 @@ footer {
     }
     
     .hideContributor {
-        display:inline;
+        display:table-cell;
     }
 }
 
@@ -260,6 +265,6 @@ footer {
     
 
     .hideDates {
-        display:inline;
+        display:table-cell;
     }
 }

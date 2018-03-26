@@ -36,7 +36,7 @@
     <table class="recipeTable">
         <tr id="headerRow">
             <th></th>
-            <th><a href="index.php?subaction=recipesort" class="sortHeading">Name</a></th>
+            <th><a href="index.php?subaction=recipesort" class="sortHeading">Recipe</a></th>
             <th><a href="index.php?subaction=categorysort" class="sortHeading">Category</a></th>
             <th class="hideContributor"><a href="index.php?subaction=contributorsort" class="sortHeading">Contributor</a></th>
             <th><a href="index.php?subaction=imagesort" class="sortHeading">Image</a></th>

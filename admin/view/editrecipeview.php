@@ -27,7 +27,12 @@
             <br>        
 
             <label for="recipeIngredients" class="formLabel">Ingredients (separate with commas):</label>
+            
             <input type="text" id="recipeIngredients" name="recipeIngredients" class="formInput" value="<?php echo $recipe['recipeIngredients']; ?>" required>
+            
+            
+            
+            
             <br>
 
             <label for="recipeInstructions" class="formLabel">Instructions:</label>

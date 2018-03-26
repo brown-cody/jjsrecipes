@@ -94,8 +94,11 @@ switch ($action) {
         $recipeCategory = filter_input(INPUT_POST, 'recipeCategory', FILTER_SANITIZE_STRING);
         $recipeContributor = filter_input(INPUT_POST, 'recipeContributor', FILTER_SANITIZE_STRING);
         $recipeImage = filter_input(INPUT_POST, 'recipeImage', FILTER_SANITIZE_STRING);
+        
         $recipeIngredients = filter_input(INPUT_POST, 'recipeIngredients', FILTER_SANITIZE_STRING);
+        
         $recipeInstructions = str_replace("\r",'<br>',filter_input(INPUT_POST, 'recipeInstructions', FILTER_SANITIZE_STRING));
+        
         edit_recipe($recipeID, $recipeName, $recipeCategory, $recipeContributor, $recipeImage, $recipeIngredients, $recipeInstructions);
         $recipes = get_recipes();
         $categories = get_categories();
@@ -106,8 +109,11 @@ switch ($action) {
         $recipeCategory = filter_input(INPUT_POST, 'recipeCategory', FILTER_SANITIZE_STRING);
         $recipeContributor = filter_input(INPUT_POST, 'recipeContributor', FILTER_SANITIZE_STRING);
         $recipeImage = filter_input(INPUT_POST, 'recipeImage', FILTER_SANITIZE_STRING);
+        
         $recipeIngredients = filter_input(INPUT_POST, 'recipeIngredients', FILTER_SANITIZE_STRING);
+        
         $recipeInstructions = str_replace("\r",'<br>',filter_input(INPUT_POST, 'recipeInstructions', FILTER_SANITIZE_STRING));
+        
         add_recipe($recipeName, $recipeCategory, $recipeContributor, $recipeImage, $recipeIngredients, $recipeInstructions);
         $recipes = get_recipes();
         $categories = get_categories();

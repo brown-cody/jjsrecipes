@@ -274,7 +274,7 @@ footer {
     margin-top:1em;
 }
 
-.recipeAddForm {
+.formContainer {
     width:23em;
     margin:auto;
 }
@@ -282,6 +282,10 @@ footer {
 .submitButton {
     clear:both;
     margin:auto;
+}
+
+.submitButtonSpace {
+    margin-bottom:1em;
 }
 
 @media only screen and (min-width: 390px) {

@@ -234,11 +234,12 @@ footer {
 }
 
 .icon {
-    margin-left:-.4em;
-    width:1.5em;
+    width: 1.5em;
+    padding:.3em;
+    margin-left:-.5em;
+    margin-right:-.5em;
     position:relative;
-    top:.4em;
-
+    top:.7em;
 }
 
 .searchForm {

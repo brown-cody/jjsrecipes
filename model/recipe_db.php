@@ -83,7 +83,8 @@ function sort_recipes_by_created() {
 function get_recipes_by_category($recipeCategory) {
     global $db;
     $query = 'SELECT * FROM recipe
-              WHERE recipeCategory = :recipeCategory';
+              WHERE recipeCategory = :recipeCategory
+              ORDER BY recipeName';
     $statement = $db->prepare($query);
     $statement->bindValue(":recipeCategory", $recipeCategory);
     $statement->execute();
@@ -95,7 +96,8 @@ function get_recipes_by_category($recipeCategory) {
 function get_recipes_by_contributor($recipeContributor) {
     global $db;
     $query = 'SELECT * FROM recipe
-              WHERE recipeContributor = :recipeContributor';
+              WHERE recipeContributor = :recipeContributor
+              ORDER BY recipeName';
     $statement = $db->prepare($query);
     $statement->bindValue(":recipeContributor", $recipeContributor);
     $statement->execute();

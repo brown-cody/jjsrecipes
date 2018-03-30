@@ -61,7 +61,7 @@ function sort_recipes_by_image() {
 function sort_recipes_by_updated() {
     global $db;
     $query = 'SELECT * FROM recipe
-              ORDER BY recipeDateEdited';
+              ORDER BY recipeDateEdited DESC';
     $statement = $db->prepare($query);
     $statement->execute();
     $recipes = $statement->fetchAll();
@@ -72,7 +72,7 @@ function sort_recipes_by_updated() {
 function sort_recipes_by_created() {
     global $db;
     $query = 'SELECT * FROM recipe
-              ORDER BY recipeDateAdded';
+              ORDER BY recipeDateAdded DESC';
     $statement = $db->prepare($query);
     $statement->execute();
     $recipes = $statement->fetchAll();

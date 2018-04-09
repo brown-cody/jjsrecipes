@@ -4,7 +4,9 @@
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <meta name="Google_Country" content="us">
         <meta name="Google_Language" content="en">
-
+        
+        <link rel="icon" href="/jjsrecipes/favicon.ico" type="image/x-icon">
+        
         <title>JJ's Recipes</title>
 
         <link type="text/css" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" rel="stylesheet">

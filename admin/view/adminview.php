@@ -18,7 +18,9 @@
                 <button type="submit" class="editButton">Edit</button>
             </form>
             <?php echo "</td><td>"; ?>
-            <?php echo $category["categoryName"]; ?>
+            <?php echo '<a href="..\index.php?action=categoryview&categoryID='.$category['categoryID'].'">'; ?>
+            <?php echo $category['categoryName']; ?>
+            <?php echo '</a>'; ?>
             <?php echo "</td></tr>"; ?>
             
         <?php endforeach; ?>
@@ -53,7 +55,9 @@
                     </form>
                 </td>
                 <td>
-                    <?php echo $recipe["recipeName"]; ?>
+                    <?php echo '<a href="..\index.php?action=recipeview&recipeID='.$recipe['recipeID'].'">'; ?>
+                    <?php echo $recipe['recipeName']; ?>
+                    <?php echo '</a>'; ?>
                 </td>
                 <td>
                     <?php
@@ -61,7 +65,9 @@
                             echo "<div style='background:red;'>ORPHAN</div>";    
                         } else foreach($categories as $category) {
                             if ($recipe['recipeCategory'] == $category['categoryID']) {
+                                echo '<a href="..\index.php?action=categoryview&categoryID='.$category['categoryID'].'">';
                                 echo $category['categoryName'];
+                                echo '</a>';
                             }
                         }
 
@@ -69,7 +75,10 @@
                     ?>
                 </td>
                 <td  class="hideContributor">
-                    <?php echo $recipe["recipeContributor"]; ?>
+                    <?php $contributorEdited = str_replace(" ","+",$recipe['recipeContributor']); ?>
+                    <?php echo '<a href="..\index.php?action=contributorview&recipeContributor='.$contributorEdited.'">'; ?>
+                    <?php echo $recipe['recipeContributor']; ?>
+                    <?php echo '</a>'; ?>
                 </td>
                 <td class="imageCell">
                     

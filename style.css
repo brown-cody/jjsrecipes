@@ -15,11 +15,24 @@ header {
 }
 
 a {
+    color:floralwhite;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color:floralwhite;
+}
+
+.hiddenLink {
     color:#303030;
     text-decoration: none;
 }
 
-a:visited {
+.hiddenLink:visited {
     color:#303030;
 }
 

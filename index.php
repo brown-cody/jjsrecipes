@@ -22,7 +22,7 @@ switch ($action) {
         break;
     case 'categoryview':
         $categories = get_categories();
-        $categoryID = filter_input(INPUT_POST, 'categoryID', FILTER_VALIDATE_INT, FILTER_SANITIZE_NUMBER_INT);
+        $categoryID = filter_input(INPUT_GET, 'categoryID', FILTER_VALIDATE_INT, FILTER_SANITIZE_NUMBER_INT);
         $recipes = get_recipes_by_category($categoryID);
         include('categoryview.php');
         break;

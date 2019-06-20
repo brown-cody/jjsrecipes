@@ -6,6 +6,7 @@
         <meta name="Google_Language" content="en">
         
         <link rel="icon" href="/jjsrecipes/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="180x180" href="/jjsrecipes/apple.png">
         
         <title>JJ's Recipes</title>
 
